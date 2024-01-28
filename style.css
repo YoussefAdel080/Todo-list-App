@@ -1,0 +1,154 @@
+body
+{
+    margin: 0;
+    font-family: "Roboto",sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+ul[class]
+{
+    list-style: none;
+    padding: 0;
+}
+
+.container
+{
+    min-height: 50vh;
+    width: 60%;
+    box-shadow: 1px 1px 20px 1px rgba(128, 128, 128,0.5);
+    padding: 2rem;
+}
+
+.todo-header
+{
+    margin-bottom: 1.5rem;
+}
+
+.todo-input
+{
+    width: 89%;
+    min-height: 35px;
+    border: 1px solid rgb(158, 158, 158);
+    padding-left: 1rem;
+    border-radius: 5px;
+}
+
+.todo-input:focus
+{
+    outline: 1px solid #54b4d3;
+    border: 0px;
+}
+
+.todo-input::placeholder
+{
+    font-size: 1rem;
+}
+
+.todo-btn
+{ 
+    cursor: pointer;  
+    background-color: #54b4d3;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: 0;
+    border-radius: 5px;
+    box-shadow:  0 8px 9px -4px rgba(84,180,211,0.3),0 4px 18px 0 rgba(84,180,211,0.2);
+}
+
+.todo-btn:hover,
+.todo-btn:focus{
+    background-color: #50abc8;
+}
+
+.filters
+{
+    display: flex;
+}
+
+.filter
+{
+    padding: 1rem 1rem;
+    width: 100px;
+    background-color: transparent;
+    border: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.55);
+    cursor: pointer;
+}
+
+.filter:hover
+{
+    background-color: #f7f7f7;
+}
+
+.current
+{
+    border-bottom: 2px solid #3b71ca;
+    color: #3b71ca;
+}
+
+.todo-cont
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f6f7;
+    padding: 1.2rem 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.todo-task
+{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    
+}
+
+
+.todo-task label
+{
+    font-size: 1.1rem;
+    font-weight: 400;
+    
+}
+
+.done
+{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.todo-options
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.delete,
+.edit
+{
+    cursor: pointer;
+}
+
+.delete:hover,
+.edit:hover
+{
+    opacity: 0.8;
+}
+
+.delete
+{
+    color: rgb(247, 53, 53);
+}
+
