@@ -170,7 +170,6 @@ function updateEventListeners()
                 todoList.removeChild(checkedActiveTask);
                 
                 activeTasks = activeTasks.filter((task) => task!=checkedActiveTask)
-
                 completedTasks.push(checkedActiveTask);
             }
             else
